@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Martian Ipsum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="site.css" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Unica+One|Average+Sans" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="title">
+            <h1>Martian Ipsum</h1>
+        </div>
+        <div class="blockquote" id="blockquote">
+            Sunsets are loved because they vanish.<br/>Flowers are loved because they go.<br/>The dogs of the field and the cats of the kitchen are loved because soon they must depart.<br/>
+            <small>- From the Dust Returned</small>
+        </div>
+        <div class="control-panel">
+            <input type="number" name="ipsumNumber" id="ipsumNumber" autofocus="" placeholder="&para;"/>
+            <button type="button" name="makeIpsum" id="makeIpsumBtn" onclick=" MakeIpsum(document.getElementById('ipsumNumber').value, divIpsum) ">Make Ipsum</button>
+        </div>
+        <textarea readonly="" name="divIpsum" id="divIpsum">
+        </textarea>
+    </div>
+    <script src="MartianIpsum.min.js"></script>
+</body>
+</html>
